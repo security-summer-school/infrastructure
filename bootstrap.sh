@@ -3,6 +3,9 @@
 # Print every command and bail on error
 set -xe
 
+# Make it possible to login as root from the vbox GUI
+chpasswd <<< "root:toor"
+
 # grub pops an annoying TUI checkbox to ask on which drive to install it to. No
 # attempt to silence it worked (e.g. https://askubuntu.com/questions/146921) so
 # it had to go.
