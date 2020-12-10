@@ -18,4 +18,7 @@ apt install -y python-is-python3
 
 "/vagrant/update.sh"
 
+git clone "https://github.com/hexcellents/sss-exploit" "$HOME/sss-exploit"
+git clone "https://github.com/hexcellents/sss-web" "$HOME/sss-web"
+
 find "/vagrant/install-scripts/" -type f -exec {} \;
