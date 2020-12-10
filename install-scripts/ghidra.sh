@@ -7,4 +7,4 @@ cd "$HOME"
 URL='https://ghidra-sre.org/ghidra_9.2_PUBLIC_20201113.zip'
 
 curl -LO "$URL"
-unzip "$(basename "$URL")"
+unzip -o -u "$(basename "$URL")"
