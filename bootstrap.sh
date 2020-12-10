@@ -21,4 +21,4 @@ apt install -y python-is-python3
 git clone "https://github.com/hexcellents/sss-exploit" "$HOME/sss-exploit"
 git clone "https://github.com/hexcellents/sss-web" "$HOME/sss-web"
 
-find "/vagrant/install-scripts/" -type f -exec {} \;
+find "/vagrant/install-scripts/" -type f -exec sh -xe "{}" \;
